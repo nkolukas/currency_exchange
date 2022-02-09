@@ -8,38 +8,42 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="estilo.css">
 </head>
-<body class="$gray-800">
+<body>
     <main>
         <div class="container p-3 mb-2 bg-primary text-white mt-5 rounded-3">
             <h1 class="text-center ">Tasa de cambio dolar</h1>
         </div>
 
-        <div class="container m-5 col">
-            <div class="cambio-1 col-md-6">
-                <h2 class="mb-4 text-white">Dolar blue venta:</h2>
-                <div class="input-group mb-3">
-                    <span class="input-group-text">u$d</span>
-                    <input type="text" class="form-control" aria-label="monto en dolares (con dos decimales)" value="1" id="pesos-1">
-                </div>
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+                <div class="col-4">
+                    <h2 class="mb-4 text-black-75">Dolar blue venta:</h2>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">u$d</span>
+                        <input type="text" class="form-control" aria-label="monto en dolares (con dos decimales)" value="1" id="pesos-1">
+                    </div>
 
-                <div class="input-group mb-3">
-                    <span class="input-group-text">AR$</span>
-                    <span class="input-group-text" aria-label="monto en pesos (con dos decimales)" id="dolares-1">0.00</span>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">AR$</span>
+                        <span class="input-group-text" aria-label="monto en pesos (con dos decimales)" id="dolares-1">0.00</span>
+                    </div>
+                    <button class="btn btn-primary"id="boton">Consultar</button>
+                </div>
+                <div class="col-4">
+                    <h2 class="mb-4 text-black-75">Dolar blue compra:</h2>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">u$d</span>
+                        <input type="text" class="form-control" aria-label="monto en dolares (con dos decimales)" value="1" id="pesos-2">
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">AR$</span>
+                        <span class="input-group-text" aria-label="monto en pesos (con dos decimales)" id="dolares-2">0.00</span>
+                    </div>
+                    
                 </div>
             </div>
-            <div class="cambio-2 col">
-                <h2 class="mb-4 text-white">Dolar blue compra:</h2>
-                <div class="input-group mb-3">
-                    <span class="input-group-text">u$d</span>
-                    <input type="text" class="form-control" aria-label="monto en dolares (con dos decimales)" value="1" id="pesos-2">
-                </div>
-
-                <div class="input-group mb-3">
-                    <span class="input-group-text">AR$</span>
-                    <span class="input-group-text" aria-label="monto en pesos (con dos decimales)" id="dolares-2">0.00</span>
-                </div>
-            </div>
-            <button class="btn btn-primary m-auto"id="boton">Consultar</button>
+            
         </div>
 
 
