@@ -7,3 +7,12 @@
 body{
     background-color: #F2F3F4;
 }
+
+@media (max-width: 580px) {
+
+    .caja{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-bottom: 60px;
+    }
+}
